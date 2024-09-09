@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { MdEdit } from "react-icons/md";
-import { TiDelete } from "react-icons/ti";
+// import { MdEdit } from "react-icons/md";
+// import { TiDelete } from "react-icons/ti";
 import './App.css';
 
 
@@ -70,10 +70,12 @@ function App() {
                   <div className="transaction-amount">₹{transaction.amount}</div>
                   <div className="transaction-actions">
                     <button onClick={() => deleteTransaction(index)}>
-                      <img src={ TiDelete } alt="delete"/>
+                     <img src="../assetes/delete.jpg"alt ="Delete"/>
+                      
                     </button>
                     <button>
-                     <img src={ MdEdit } alt ="Edit"/>
+                     {/* <img src={ MdEdit } alt ="Edit"/> */}
+                     <img src="../assetes/edit.jpg"alt ="Delete"/>
                     </button>
                   </div>
                 </div>
